@@ -5,10 +5,13 @@ import logo from "./logo.png"
 const Cabecalho = () => {
     return (
         <header className={styles.cabecalho}>
-            <p>Sou cabeçalho!</p>
             <Link to='./'>
                 <img src={logo} alt="Logo do cinetag"></img>
-            </Link>            
+            </Link>
+            <nav>
+                <CabecalhoLink url="./">Home</CabecalhoLink>
+                <CabecalhoLink url="./Favoritos">Favoritos</CabecalhoLink>
+            </nav>          
         </header>
     )
 }
