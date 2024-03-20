@@ -1,7 +1,7 @@
-import Inicio from "./pages/Inicio"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Inicio from "./pages/Inicio"
 
-function AppRoutes() {
+const AppRoutes = () => {
     return (
         <BrowserRouter>
             <Routes>

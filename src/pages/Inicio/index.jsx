@@ -1,6 +1,9 @@
-function Inicio() {
+import React from "react"
+import Cabecalho from "@/components/cabecalho"
+
+const Inicio = () => {
     return (
-        <></>
+        <Cabecalho />
     )
 }
 
