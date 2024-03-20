@@ -1,7 +1,8 @@
+import React from "react"
 import { Link } from 'react-router-dom'
-import styles from './CabecalhoLink.module.css'
+import styles from './Cabecalho.module.css'
 
-function CabecalhoLink({ url, children }) {
+const CabecalhoLink = ({ url, children }) => {
     return (
         <Link to={url} className={styles.link}>
             {children}
