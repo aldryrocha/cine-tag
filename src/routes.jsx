@@ -4,7 +4,7 @@ import Favoritos from "./pages/Favoritos"
 import Cabecalho from "@/components/Cabecalho"
 import Rodape from "@/components/Rodape"
 import Container from "@/components/Container"
-import FavoritosProvider from "contexts/Favoritos"
+import FavoritosProvider from "@/contexts/Favoritos"
 
 const AppRoutes = () => {
     return (
