@@ -1,11 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Inicio from "./pages/Inicio"
 import Favoritos from "./pages/Favoritos"
+import Player from "./pages/Player"
+import NaoEncontrada from "./pages/NaoEncontrada"
 import Cabecalho from "@/components/Cabecalho"
 import Rodape from "@/components/Rodape"
 import Container from "@/components/Container"
 import FavoritosProvider from "@/contexts/Favoritos"
-import Player from "./pages/Player"
 
 const AppRoutes = () => {
     return (
@@ -17,6 +18,7 @@ const AppRoutes = () => {
                         <Route path="/" element={<Inicio />}></Route>
                         <Route path="/favoritos" element={<Favoritos />}></Route>
                         <Route path="video/:id" element={<Player />}></Route>
+                        <Route path='*' element={<NaoEncontrada />}></Route>
                     </Routes>
                 </FavoritosProvider>                
             </Container>
